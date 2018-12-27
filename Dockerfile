@@ -1,7 +1,7 @@
 # Choose any golang image, just make sure it doesn't have -onbuild
 FROM golang:1.11.4
 
-RUN apt-get update && apt-get -y install libopus-dev libopusfile-dev
+RUN apt-get update && apt-get -y install apt-utils libopus-dev libopusfile-dev
 
 # Everything below is copied manually from the official -onbuild image,
 # with the ONBUILD keywords removed.
